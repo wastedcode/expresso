@@ -1,0 +1,2280 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-03-10 18:06:18) [GET]
+
+NameError (uninitialized constant WebsiteController):
+  app/controllers/emotions_controller.rb:1
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 18:06:51) [GET]
+Rendering emotions/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 18:20:58) [GET]
+Rendering emotions/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 18:21:14) [GET]
+Rendering emotions/index
+
+ActionView::TemplateError (undefined local variable or method `home_url' for #<ActionView::Base:0x1118bf5f8>) on line #4 of app/views/emotions/index.html.haml:
+1: #content
+2:   .title
+3:     %h1= @title
+4:     = link_to 'Home', home_url
+
+    app/views/emotions/index.html.haml:4:in `_run_haml_app47views47emotions47index46html46haml'
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (29.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 18:37:18) [GET]
+Rendering emotions/index
+
+ActionView::TemplateError (undefined local variable or method `home_url' for #<ActionView::Base:0x11158d178>) on line #4 of app/views/emotions/index.html.haml:
+1: #content
+2:   .title
+3:     %h1= @title
+4:     = link_to 'Home', home_url
+
+    app/views/emotions/index.html.haml:4:in `_run_haml_app47views47emotions47index46html46haml'
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 18:49:32) [GET]
+Rendering emotions/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:11:45) [GET]
+Rendering emotions/new
+ERROR: compiling _run_haml_app47views47emotions47new46html46haml RAISED compile error
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:4: syntax error, unexpected ';', expecting ')'
+));}\n", 0, false);end
+                   ^
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:5: syntax error, unexpected kENSURE, expecting '}'
+_erbout;ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+              ^
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:5: syntax error, unexpected kEND, expecting '}'
+_erbout;ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+                                                                    ^
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:8: syntax error, unexpected kEND, expecting '}'
+Function body:           def _run_haml_app47views47emotions47new46html46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :attr_wrapper=>"'", :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :encoding=>nil, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;; form_for @emotion do |f|
+_hamlout.push_text("#{_hamlout.format_script_false_false_false_false_false_true_false(( f.text_field :name
+));}\n#{_hamlout.format_script_false_false_false_false_false_true_false(( f.submit "Create
+));}\n", 0, false);end
+_erbout;ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:8:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_view/base.rb:265:in `render_without_haml'
+/Library/Ruby/Gems/1.8/gems/haml-3.1.4/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1328:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:1340:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.11/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.11/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:48:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.3/lib/rack/handler/webrick.rb:14:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.11/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:4: syntax error, unexpected ';', expecting ')'
+));}\n", 0, false);end
+                   ^
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:5: syntax error, unexpected kENSURE, expecting '}'
+_erbout;ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+              ^
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:5: syntax error, unexpected kEND, expecting '}'
+_erbout;ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+                                                                    ^
+/Users/inderpreet/Code/expresso/app/views/emotions/new.html.haml:8: syntax error, unexpected kEND, expecting '}') on line #4 of app/views/emotions/new.html.haml:
+1: - form_for @emotion do |f|
+2:   = f.text_field :name
+3:   = f.submit "Create
+
+    app/views/emotions/new.html.haml:8:in `compile!'
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:12:07) [GET]
+Rendering emotions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/emotions/new.html.haml:
+1: - form_for @emotion do |f|
+2:   = f.text_field :name
+3:   = f.submit "Create"
+
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:249:in `form_for'
+    app/views/emotions/new.html.haml:1:in `_run_haml_app47views47emotions47new46html46haml'
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:14:34) [GET]
+Rendering emotions/new
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #1 of app/views/emotions/new.html.haml:
+1: - form_for @emotion do |f|
+2:   = f.text_field :name
+3:   = f.submit "Create"
+
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:249:in `form_for'
+    app/views/emotions/new.html.haml:1:in `_run_haml_app47views47emotions47new46html46haml'
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:18:36) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'emotions'):
+  app/controllers/emotions_controller.rb:7:in `new'
+  app/controllers/emotions_controller.rb:7:in `new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:18:56) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'emotions'):
+  app/controllers/emotions_controller.rb:7:in `new'
+  app/controllers/emotions_controller.rb:7:in `new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:18:57) [GET]
+
+ActiveRecord::StatementInvalid (Could not find table 'emotions'):
+  app/controllers/emotions_controller.rb:7:in `new'
+  app/controllers/emotions_controller.rb:7:in `new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "emotions" ("name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "emotions"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: near "binary": syntax error: CREATE TABLE "emotions" ("id" char(36) binary NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "emotions" ("id" char(36) NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:30:29) [GET]
+Rendering emotions/new
+
+ActionView::TemplateError (undefined method `emotions_path' for #<ActionView::Base:0x1116a1e88>) on line #1 of app/views/emotions/new.html.haml:
+1: - form_for @emotion do |f|
+2:   = f.text_field :name
+3:   = f.submit "Create"
+
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:249:in `form_for'
+    app/views/emotions/new.html.haml:1:in `_run_haml_app47views47emotions47new46html46haml'
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:33:49) [GET]
+Rendering emotions/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:34:19) [GET]
+Rendering emotions/new
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 19:34:21) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"a"}}
+
+ActionView::MissingTemplate (Missing template emotions/create.erb in view path app/views):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mEmotion Load (0.3ms)[0m   [0;1mSELECT * FROM "emotions" LIMIT 1[0m
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:35:36) [GET]
+Rendering emotions/new
+Completed in 10ms (View: 4, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 19:35:38) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"a"}}
+Redirected to http://localhost:3000/emotions
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 19:35:38) [GET]
+Rendering emotions/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+  [4;36;1mEmotion Load (0.3ms)[0m   [0;1mSELECT * FROM "emotions" LIMIT 1[0m
+  [4;35;1mEmotion Load (0.4ms)[0m   [0mSELECT * FROM "emotions" [0m
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:36:25) [GET]
+Rendering emotions/new
+Completed in 55ms (View: 48, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 19:36:40) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"a"}}
+
+Redirected to http://localhost:3000/emotions
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 19:36:40) [GET]
+Rendering emotions/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+  [4;36;1mEmotion Load (0.4ms)[0m   [0;1mSELECT * FROM "emotions" LIMIT 1[0m
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 19:37:32) [GET]
+Rendering emotions/new
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 19:37:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"sadsa"}}
+This is: 
+Redirected to http://localhost:3000/emotions
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 19:37:34) [GET]
+Rendering emotions/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-10 20:30:58) [GET]
+Rendering emotions/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 20:31:00) [GET]
+Rendering emotions/new
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 20:31:06) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"Love"}}
+  [4;36;1mEmotion Load (0.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = 'a1c9d23c-9987-414a-bb4b-ca417768b043') LIMIT 1[0m
+  [4;35;1mEmotion Create (0.4ms)[0m   [0mINSERT INTO "emotions" ("name", "created_at", "updated_at", "id") VALUES('Love', '2012-03-11 04:31:06', '2012-03-11 04:31:06', 'a1c9d23c-9987-414a-bb4b-ca417768b043')[0m
+Redirected to http://localhost:3000/emotions.%23%3Cemotion:0x1115dedc0%3E
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#index to #<emotion:0x1115dedc0> (for 127.0.0.1 at 2012-03-10 20:31:06) [GET]
+
+ActionView::MissingTemplate (Missing template emotions/index.erb in view path app/views):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mEmotion Load (0.4ms)[0m   [0;1mSELECT * FROM "emotions" LIMIT 1[0m
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 20:32:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"Love"}}
+  [4;36;1mEmotion Load (0.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = 'a0bca068-d2e1-4dc1-8037-32466301d29a') LIMIT 1[0m
+  [4;35;1mEmotion Create (0.2ms)[0m   [0mINSERT INTO "emotions" ("name", "created_at", "updated_at", "id") VALUES('Love', '2012-03-11 04:32:36', '2012-03-11 04:32:36', 'a0bca068-d2e1-4dc1-8037-32466301d29a')[0m
+Redirected to http://localhost:3000/emotions.%23%3Cemotion:0x1114c9570%3E
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#index to #<emotion:0x1114c9570> (for 127.0.0.1 at 2012-03-10 20:32:36) [GET]
+
+ActionView::MissingTemplate (Missing template emotions/index.erb in view path app/views):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mEmotion Load (0.4ms)[0m   [0mSELECT * FROM "emotions" LIMIT 1[0m
+  [4;36;1mEmotion Load (0.5ms)[0m   [0;1mSELECT * FROM "emotions" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "emotions"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "emotions" ("id" char(36) NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_emotions_on_name" ON "emotions" ("name")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 20:35:51) [GET]
+Rendering emotions/new
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 20:35:57) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"Love"}}
+  [4;36;1mEmotion Load (0.3ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = '3667dadd-fd03-4dd0-bd4b-c602b8c5be1d') LIMIT 1[0m
+  [4;35;1mEmotion Load (0.2ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'Love') LIMIT 1[0m
+  [4;36;1mEmotion Create (0.4ms)[0m   [0;1mINSERT INTO "emotions" ("name", "created_at", "updated_at", "id") VALUES('Love', '2012-03-11 04:35:57', '2012-03-11 04:35:57', '3667dadd-fd03-4dd0-bd4b-c602b8c5be1d')[0m
+Redirected to http://localhost:3000/emotions.%23%3Cemotion:0x1117e2e50%3E
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#index to #<emotion:0x1117e2e50> (for 127.0.0.1 at 2012-03-10 20:35:57) [GET]
+
+ActionView::MissingTemplate (Missing template emotions/index.erb in view path app/views):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mEmotion Load (0.4ms)[0m   [0;1mSELECT * FROM "emotions" [0m
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-10 20:36:16) [GET]
+Rendering emotions/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-10 20:36:20) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"Love"}}
+  [4;35;1mEmotion Load (0.2ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = '63bd15cb-f170-480b-ade4-0176b3b5ed64') LIMIT 1[0m
+  [4;36;1mEmotion Load (0.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'Love') LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Name has already been taken):
+  app/controllers/emotions_controller.rb:13:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (98.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-11 17:14:24) [GET]
+Rendering emotions/new
+Completed in 110ms (View: 55, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-11 17:14:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"Love"}}
+  [4;35;1mEmotion Load (2.1ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = '4b2806a9-4e6c-4077-8143-f68cbce3ebec') LIMIT 1[0m
+  [4;36;1mEmotion Load (1.9ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'Love') LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Name has already been taken):
+  app/controllers/emotions_controller.rb:13:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.2ms)
+Rendered rescues/_request_and_response (31.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-11 17:14:36) [GET]
+Rendering emotions/new
+Completed in 17ms (View: 8, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-11 17:14:41) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"xiIvlsDb7bTy6iZ4Bvhk9nkQbF8zteGMHJoeyjT6ia4=", "emotion"=>{"name"=>"Excitement"}}
+  [4;35;1mEmotion Load (0.2ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = 'bb411426-1267-43be-9915-71ffa0a3d990') LIMIT 1[0m
+  [4;36;1mEmotion Load (0.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'Excitement') LIMIT 1[0m
+  [4;35;1mEmotion Create (0.3ms)[0m   [0mINSERT INTO "emotions" ("name", "created_at", "updated_at", "id") VALUES('Excitement', '2012-03-12 00:14:42', '2012-03-12 00:14:42', 'bb411426-1267-43be-9915-71ffa0a3d990')[0m
+Completed in 21ms (View: 1, DB: 1) | 200 OK [http://localhost/emotions]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+Migrating to CreateExperiences (20120311172800)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "experiences" ("id" char(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120311172800')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("experiences")[0m
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-12 21:47:48) [GET]
+Rendering emotions/index
+Completed in 70ms (View: 32, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 22:46:03) [GET]
+Rendering emotions/new
+Completed in 24ms (View: 9, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 22:46:07) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"Love"}}
+  [4;36;1mEmotion Load (3.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = '08d7b35b-9d4d-4bec-b0a3-f013611d52f4') LIMIT 1[0m
+  [4;35;1mEmotion Load (2.0ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'Love') LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Name has already been taken):
+  app/controllers/emotions_controller.rb:13:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 22:46:11) [GET]
+Rendering emotions/new
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 22:46:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"Anger"}}
+  [4;36;1mEmotion Load (0.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = 'f8a1b907-6fd3-4324-b6e8-595b40df1221') LIMIT 1[0m
+  [4;35;1mEmotion Load (0.1ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'Anger') LIMIT 1[0m
+  [4;36;1mEmotion Create (0.3ms)[0m   [0;1mINSERT INTO "emotions" ("name", "created_at", "updated_at", "id") VALUES('Anger', '2012-03-13 05:46:16', '2012-03-13 05:46:16', 'f8a1b907-6fd3-4324-b6e8-595b40df1221')[0m
+Completed in 12ms (View: 1, DB: 1) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-12 22:47:10) [GET]
+Rendering emotions/index
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-12 22:47:24) [GET]
+  Parameters: {"id"=>"10"}
+Rendering emotions/index
+Completed in 51ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions?id=10]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 22:47:39) [GET]
+Rendering emotions/new
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 22:48:05) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"Jealous"}}
+  [4;35;1mEmotion Load (0.2ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = '9a7e20c4-507f-448b-91ad-4681a8bd48cf') LIMIT 1[0m
+  [4;36;1mEmotion Load (0.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'Jealous') LIMIT 1[0m
+  [4;35;1mEmotion Create (0.2ms)[0m   [0mINSERT INTO "emotions" ("name", "created_at", "updated_at", "id") VALUES('Jealous', '2012-03-13 05:48:05', '2012-03-13 05:48:05', '9a7e20c4-507f-448b-91ad-4681a8bd48cf')[0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 22:59:10) [GET]
+Rendering emotions/new
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 23:01:03) [GET]
+Rendering emotions/new
+Completed in 11ms (View: 3, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:01:07) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"asd"}}
+
+NameError (undefined local variable or method `new_emotions_path' for #<EmotionsController:0x11164bbf0>):
+  app/controllers/emotions_controller.rb:11:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:01:18) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"asd"}}
+
+NameError (undefined local variable or method `emotions_new_path' for #<EmotionsController:0x1119ef180>):
+  app/controllers/emotions_controller.rb:11:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:01:27) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"asd"}}
+Redirected to http://localhost:3000/emotions
+  [4;36;1mEmotion Load (0.3ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = 'b7ecc3ed-2b7e-4a18-a397-12ed7e4cf550') LIMIT 1[0m
+  [4;35;1mEmotion Load (0.2ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'asd') LIMIT 1[0m
+  [4;36;1mEmotion Create (0.4ms)[0m   [0;1mINSERT INTO "emotions" ("name", "created_at", "updated_at", "id") VALUES('asd', '2012-03-13 06:01:27', '2012-03-13 06:01:27', 'b7ecc3ed-2b7e-4a18-a397-12ed7e4cf550')[0m
+
+ActionController::DoubleRenderError (Can only render or redirect once per action):
+  app/controllers/emotions_controller.rb:15:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:01:36) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"asd"}}
+Redirected to http://localhost:3000/emotions
+  [4;35;1mEmotion Load (0.1ms)[0m   [0mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."id" = '9a1f2987-a312-4559-b4f7-7ab35cdeabd2') LIMIT 1[0m
+  [4;36;1mEmotion Load (0.1ms)[0m   [0;1mSELECT "emotions".id FROM "emotions" WHERE ("emotions"."name" = 'asd') LIMIT 1[0m
+
+ActiveRecord::RecordInvalid (Validation failed: Name has already been taken):
+  app/controllers/emotions_controller.rb:14:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (90.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (unprocessable_entity)
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 23:01:48) [GET]
+Rendering emotions/new
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:01:50) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>"Love"}}
+Redirected to http://localhost:3000/emotions
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-12 23:01:50) [GET]
+Rendering emotions/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 23:02:37) [GET]
+Rendering emotions/new
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:02:39) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>""}}
+Redirected to http://localhost:3000/emotions/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 23:02:39) [GET]
+Rendering emotions/new
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:02:42) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>""}}
+Redirected to http://localhost:3000/emotions/new
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 23:02:42) [GET]
+Rendering emotions/new
+Completed in 57ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#create (for 127.0.0.1 at 2012-03-12 23:02:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"sYvnCb421tGxETJ1Pwskxg2UbXZOavbyW/gGLiK7gmg=", "emotion"=>{"name"=>""}}
+Redirected to http://localhost:3000/emotions/new
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/emotions]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 23:02:43) [GET]
+Rendering emotions/new
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#new (for 127.0.0.1 at 2012-03-12 23:03:11) [GET]
+Rendering emotions/new
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/emotions/new]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-12 23:03:28) [GET]
+Rendering emotions/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+  [4;36;1mEmotion Load (0.3ms)[0m   [0;1mSELECT * FROM "emotions" LIMIT 1[0m
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-12 23:05:45) [GET]
+Rendering emotions/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/emotions]
+
+
+Processing EmotionsController#index (for 127.0.0.1 at 2012-03-12 23:05:45) [GET]
+Rendering emotions/index
+Completed in 27ms (View: 23, DB: 0) | 200 OK [http://localhost/emotions]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateExperiences (20120311172800)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mDROP TABLE "experiences"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120311172800'[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "emotions"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "emotions" ("id" char(36) NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_emotions_on_name" ON "emotions" ("name")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+Migrating to CreateExperiences (20120311172800)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "experiences" ("id" char(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120311172800')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("experiences")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateExperiences (20120311172800)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "experiences"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120311172800'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+Migrating to CreateExperiences (20120311172800)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "experiences" ("id" char(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120311172800')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("experiences")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+Migrating to CreateExperiences (20120311172800)
+Migrating to AddNameToExperiences (20120312231700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.5ms)[0m   [0mALTER TABLE "experiences" ADD "name" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120312231700')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("experiences")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddNameToExperiences (20120312231700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TEMPORARY TABLE "altered_experiences" ("id" varchar(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("experiences")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDROP TABLE "experiences"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE TABLE "experiences" ("id" varchar(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_experiences")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "altered_experiences"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120312231700'[0m
+Migrating to CreateExperiences (20120311172800)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "experiences"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120311172800'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("emotions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+Migrating to CreateExperiences (20120311172800)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "experiences" ("id" char(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120311172800')[0m
+Migrating to AddNameToExperiences (20120312231700)
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "experiences" ADD "name" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120312231700')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("experiences")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddNameToExperiences (20120312231700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TEMPORARY TABLE "altered_experiences" ("id" varchar(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("experiences")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mDROP TABLE "experiences"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCREATE TABLE "experiences" ("id" varchar(36) NOT NULL, "comment" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("altered_experiences")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mDROP TABLE "altered_experiences"[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120312231700'[0m
+Migrating to CreateExperiences (20120311172800)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mDROP TABLE "experiences"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120311172800'[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (1.2ms)[0m   [0;1mDROP TABLE "emotions"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2012-03-31 20:33:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, edit, new, show, and update):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:33:16) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NoMethodError (undefined method `require_user' for #<UsersController:0x1024484e8>):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:10) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+
+NameError (undefined local variable or method `login_path' for #<UsersController:0x1021bb8b0>):
+  app/controllers/application_controller.rb:21:in `require_user'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (28.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:32) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:32) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 10ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 7ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 8ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 6ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:35:33) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-03-31 20:35:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+NoMethodError (undefined method `require_no_user' for #<UsersController:0x1024e34c0>):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (23.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:36:19) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 9ms (DB: 0) | 302 Found [http://0.0.0.0/account/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-03-31 20:36:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+
+ActiveRecord::StatementInvalid (Could not find table 'users'):
+  app/controllers/users_controller.rb:6:in `new'
+  app/controllers/users_controller.rb:6:in `new'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "emotions" ("id" char(36) NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE UNIQUE INDEX "index_emotions_on_name" ON "emotions" ("name")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+Migrating to CreateUsers (20120401023242)
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) NOT NULL, "crypted_password" varchar(255) NOT NULL, "password_salt" varchar(255) NOT NULL, "persistence_token" varchar(255) NOT NULL, "single_access_token" varchar(255) NOT NULL, "perishable_token" varchar(255) NOT NULL, "login_count" integer DEFAULT 0 NOT NULL, "failed_login_count" integer DEFAULT 0 NOT NULL, "last_request_at" datetime, "current_login_at" datetime, "last_login_at" datetime, "last_login_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSQLite3::SQLException: table users has no column named login: CREATE INDEX "index_users_on_login" ON "users" ("login")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mDROP TABLE "emotions"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "emotions" ("id" char(36) NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_emotions_on_name" ON "emotions" ("name")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+Migrating to CreateUsers (20120401023242)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) NOT NULL, "crypted_password" varchar(255) NOT NULL, "password_salt" varchar(255) NOT NULL, "persistence_token" varchar(255) NOT NULL, "single_access_token" varchar(255) NOT NULL, "perishable_token" varchar(255) NOT NULL, "login_count" integer DEFAULT 0 NOT NULL, "failed_login_count" integer DEFAULT 0 NOT NULL, "last_request_at" datetime, "current_login_at" datetime, "last_login_at" datetime, "last_login_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120401023242')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("emotions")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_persistence_token')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-03-31 20:37:22) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering users/new
+Rendered users/_form (2.9ms)
+Completed in 22ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-03-31 20:37:32) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"I9OB12pCAjLaIOvkP0I2JGdemlz4Tep79M9dMwYAS/U=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"inder"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'inder') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'd789ba0d93286119bdb0b6765dca4c2bd68fe65bf42d2b0c955ee3801962ab8959d50f3a0b1d58677ce7de4e7c92c6f138aa17cb9469f5e6910e4e5dfa42ace6') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."single_access_token" = 'EFm8Unz7HTnXZO7lT7Oe') LIMIT 1[0m
+Rendering users/new
+Rendered users/_form (2.8ms)
+Completed in 149ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2012-03-31 20:37:41) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"I9OB12pCAjLaIOvkP0I2JGdemlz4Tep79M9dMwYAS/U=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"inder@wastedcode.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'inder@wastedcode.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '7429751cbc78d71f5717508456a78e4e16bfa0d25c5b7819f42fa91683884662a0be576aa4ad5581b363b97fcfd09d5fa33f8753043748d1fb771f1830d992cc') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."single_access_token" = 'WEvBRcWDZlAUAsVLDxv8') LIMIT 1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO "users" ("single_access_token", "last_request_at", "created_at", "crypted_password", "perishable_token", "updated_at", "failed_login_count", "password_salt", "current_login_at", "persistence_token", "login_count", "last_login_ip", "last_login_at", "email") VALUES('WEvBRcWDZlAUAsVLDxv8', '2012-04-01 03:37:41', '2012-04-01 03:37:41', '4f308f28598ce588a2f526a70cbd39446c41e61e4bc8f0c3c5ab4ba26becde329f2799b9acd69eaab7a98dca90f6664e22af819e8e239522cd0aa87d6e50fd39', 'cEsja7sXzsuPJYCyath', '2012-04-01 03:37:41', 0, 'rFlh9VMPqp668E51cqP2', '2012-04-01 03:37:41', '7429751cbc78d71f5717508456a78e4e16bfa0d25c5b7819f42fa91683884662a0be576aa4ad5581b363b97fcfd09d5fa33f8753043748d1fb771f1830d992cc', 1, NULL, NULL, 'inder@wastedcode.com')[0m
+
+NoMethodError (undefined method `redirect_back_or_default' for #<UsersController:0x1021741e0>):
+  app/controllers/users_controller.rb:13:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (25.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:37:50) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7429751cbc78d71f5717508456a78e4e16bfa0d25c5b7819f42fa91683884662a0be576aa4ad5581b363b97fcfd09d5fa33f8753043748d1fb771f1830d992cc') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2012-04-01 03:37:50', "perishable_token" = '8XJ8Pa0Wmhcn2exiABM', "last_request_at" = '2012-04-01 03:37:50' WHERE "id" = 1[0m
+Rendering users/show
+
+ActionView::TemplateError (undefined method `login' for #<User:0x102042768>) on line #2 of app/views/users/show.html.haml:
+1: Login:
+2: = @user.login
+3: 
+4: %br
+5: 
+
+    app/views/users/show.html.haml:2:in `_run_haml_app47views47users47show46html46haml'
+    haml (3.1.4) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (86.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:38:14) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '7429751cbc78d71f5717508456a78e4e16bfa0d25c5b7819f42fa91683884662a0be576aa4ad5581b363b97fcfd09d5fa33f8753043748d1fb771f1830d992cc') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2012-04-01 03:38:14', "perishable_token" = 'A17WgHW5lKdqWhz1jOEy', "last_request_at" = '2012-04-01 03:38:14' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 26ms (View: 6, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-03-31 20:39:14) [GET]
+
+ActionController::RoutingError (No route matches "/user_session/destroy" with {:method=>:get}):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-03-31 20:51:03) [GET]
+
+ActionController::RoutingError (No route matches "/new" with {:method=>:get}):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:51:08) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+Redirected to http://0.0.0.0:3000/account/new
+Filter chain halted as [:require_user] rendered_or_redirected.
+Completed in 11ms (DB: 0) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-03-31 20:51:08) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering users/new
+Rendered users/_form (1.1ms)
+Completed in 63ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/account/new]
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2012-03-31 20:51:21) [GET]
+  Parameters: {"action"=>"show", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-03-31 20:51:24) [GET]
+
+ActionController::RoutingError (No route matches "/user_sessions" with {:method=>:get}):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2012-03-31 20:51:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering user_sessions/new
+Completed in 18ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/user_session/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2012-03-31 20:51:38) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"inder@wastedcode.com"}, "action"=>"create", "authenticity_token"=>"OGsFDORMobIynTDu58675RCQSsJYx9W1Ec38A7WSDE0=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".email) = 'inder@wastedcode.com') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "login_count" = 2, "updated_at" = '2012-04-01 03:51:38', "perishable_token" = '2uZYmk1r9G0NjfmfS5NZ', "last_request_at" = '2012-04-01 03:51:38', "last_login_at" = '2012-04-01 03:37:41', "current_login_at" = '2012-04-01 03:51:38' WHERE "id" = 1[0m
+
+NameError (undefined local variable or method `account_index_url' for #<UserSessionsController:0x101f76168>):
+  app/controllers/user_sessions_controller.rb:13:in `create'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2012-03-31 20:52:19) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"inder@wastedcode.com"}, "action"=>"create", "authenticity_token"=>"OGsFDORMobIynTDu58675RCQSsJYx9W1Ec38A7WSDE0=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:19', "perishable_token" = 'bqqqKQDtWPdlI9mH199V', "last_request_at" = '2012-04-01 03:52:19' WHERE "id" = 1[0m
+
+NameError (undefined local variable or method `store_location' for #<UserSessionsController:0x1021ca0b8>):
+  app/controllers/application_controller.rb:28:in `require_no_user'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (24.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2012-03-31 20:52:39) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"inder@wastedcode.com"}, "action"=>"create", "authenticity_token"=>"OGsFDORMobIynTDu58675RCQSsJYx9W1Ec38A7WSDE0=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:39', "perishable_token" = 'QX3JD4bzRXDP6Ss3okav', "last_request_at" = '2012-04-01 03:52:39' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 18ms (DB: 1) | 302 Found [http://0.0.0.0/user_session]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:39) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.4ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:39', "perishable_token" = 'El03th06oxEcHseTgd', "last_request_at" = '2012-04-01 03:52:39' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 22ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2012-03-31 20:52:42) [GET]
+  Parameters: {"action"=>"edit", "controller"=>"users"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:42', "perishable_token" = 'qT3fKKcbMcOmUSC0sCPG', "last_request_at" = '2012-04-01 03:52:42' WHERE "id" = 1[0m
+Rendering users/edit
+Rendered users/_form (1.1ms)
+Completed in 25ms (View: 7, DB: 1) | 200 OK [http://0.0.0.0/account/edit]
+
+
+Processing UsersController#update (for 127.0.0.1 at 2012-03-31 20:52:47) [PUT]
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"OGsFDORMobIynTDu58675RCQSsJYx9W1Ec38A7WSDE0=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"inder@wastedcode.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;36;1mUser Update (0.3ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:47', "perishable_token" = 'rY4pA9rtPi9Zhjar3M8F', "last_request_at" = '2012-04-01 03:52:47' WHERE "id" = 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = 'd6fdc69ba225d0bf5435fba088e29c091f08d64fce9263acd0098bca546d3e0e622c801cc8d7e1f539a7fd9dba13d14c0eb55e6f6aaf581174ad6ac0073a0aac' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "login_count" = 3, "persistence_token" = 'd6fdc69ba225d0bf5435fba088e29c091f08d64fce9263acd0098bca546d3e0e622c801cc8d7e1f539a7fd9dba13d14c0eb55e6f6aaf581174ad6ac0073a0aac', "updated_at" = '2012-04-01 03:52:47', "perishable_token" = 'Oo60aqqOeGJ4QtIctoY0', "last_request_at" = '2012-04-01 03:52:47', "last_login_at" = '2012-04-01 03:51:38', "current_login_at" = '2012-04-01 03:52:47', "password_salt" = 'x0BhalLbfMHXWwgnoDGo', "crypted_password" = 'bd2adcdd613fe1b54560223c0d4d1a36910706707bc1ab9ae3fadc0f26607a4d2af5b4a98ebbd0ef1c049988fa8494cef98a7ad1f40b2eafd587f37a8c8690eb' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/account
+Completed in 25ms (DB: 1) | 302 Found [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:47) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:47', "perishable_token" = 'P3kXYhdz30Vax0UHQ8Xe', "last_request_at" = '2012-04-01 03:52:47' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 64ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:50) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:50', "perishable_token" = 'ipnTsBJoUgqHv9E5jPy', "last_request_at" = '2012-04-01 03:52:50' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:52) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:52', "perishable_token" = 'co7SU2aW1j4BUqlXtJGn', "last_request_at" = '2012-04-01 03:52:52' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:52) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:52', "perishable_token" = 'GEYPGDzAWm3TPvh9D2R', "last_request_at" = '2012-04-01 03:52:52' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 18ms (View: 2, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:53) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:53', "perishable_token" = '8ChgutDXGXphrfRxF4d', "last_request_at" = '2012-04-01 03:52:53' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:53) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:53', "perishable_token" = 'Kn54yj5zDr42qO6R5FBt', "last_request_at" = '2012-04-01 03:52:53' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 17ms (View: 1, DB: 0) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:53) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:53', "perishable_token" = 'iTH4EOZsUgnRaGl7ipLi', "last_request_at" = '2012-04-01 03:52:53' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 17ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2012-03-31 20:52:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:57', "perishable_token" = 'IC5QTbMerEatoFkOc65R', "last_request_at" = '2012-04-01 03:52:57' WHERE "id" = 1[0m
+Redirected to http://0.0.0.0:3000/account
+Filter chain halted as [:require_no_user] rendered_or_redirected.
+Completed in 17ms (DB: 1) | 302 Found [http://0.0.0.0/account/new]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2012-03-31 20:52:57) [GET]
+  Parameters: {"action"=>"show", "controller"=>"users"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mUser Update (0.3ms)[0m   [0mUPDATE "users" SET "updated_at" = '2012-04-01 03:52:57', "perishable_token" = '9ZAXNBmCniGXvkY0wiE', "last_request_at" = '2012-04-01 03:52:57' WHERE "id" = 1[0m
+Rendering users/show
+Completed in 20ms (View: 1, DB: 1) | 200 OK [http://0.0.0.0/account]
+
+
+Processing UserSessionsController#show (for 127.0.0.1 at 2012-03-31 20:53:04) [GET]
+  Parameters: {"action"=>"show", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to show. Actions: create, destroy, and new):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20120401023242)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120401023242'[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;35;1mSQL (1.2ms)[0m   [0mDROP TABLE "emotions"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20120310171700'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateEmotions (20120310171700)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE TABLE "emotions" ("id" char(36) NOT NULL, "name" varchar(255) NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_emotions_on_name" ON "emotions" ("name")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120310171700')[0m
+Migrating to CreateUsers (20120331191908)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) NOT NULL, "crypted_password" varchar(255) NOT NULL, "password_salt" varchar(255) NOT NULL, "persistence_token" varchar(255) NOT NULL, "single_access_token" varchar(255) NOT NULL, "perishable_token" varchar(255) NOT NULL, "login_count" integer DEFAULT 0 NOT NULL, "failed_login_count" integer DEFAULT 0 NOT NULL, "last_request_at" datetime, "current_login_at" datetime, "last_login_at" datetime, "last_login_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_users_on_persistence_token" ON "users" ("persistence_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20120331191908')[0m
+Migrating to CreateSessions (20120331210424)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "session_id" varchar(255) NOT NULL, "data" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_sessions_on_session_id" ON "sessions" ("session_id")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCREATE INDEX "index_sessions_on_updated_at" ON "sessions" ("updated_at")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20120331210424')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("emotions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_emotions_on_name')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("sessions")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_sessions_on_updated_at')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_sessions_on_session_id')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_persistence_token')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
