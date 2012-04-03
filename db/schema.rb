@@ -9,7 +9,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120331210424) do
+ActiveRecord::Schema.define(:version => 20120402234100) do
+
+  create_table "activities", :id => false, :force => true do |t|
+    t.string   "id",         :limit => 36, :null => false
+    t.string   "name",                     :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "activities", ["name"], :name => "index_activities_on_name", :unique => true
+
+  create_table "actors", :id => false, :force => true do |t|
+    t.string "id",            :null => false
+    t.string "experience_id", :null => false
+    t.string "user_id",       :null => false
+  end
+
+  add_index "actors", ["experience_id"], :name => "index_actors_on_experience_id"
 
   create_table "emotions", :id => false, :force => true do |t|
     t.string   "id",         :limit => 36, :null => false
@@ -19,6 +36,33 @@ ActiveRecord::Schema.define(:version => 20120331210424) do
   end
 
   add_index "emotions", ["name"], :name => "index_emotions_on_name", :unique => true
+
+  create_table "experienced_activities", :id => false, :force => true do |t|
+    t.string "id",            :null => false
+    t.string "experience_id", :null => false
+    t.string "activity_id",   :null => false
+  end
+
+  add_index "experienced_activities", ["experience_id"], :name => "index_experienced_activities_on_experience_id"
+
+  create_table "experienced_emotions", :id => false, :force => true do |t|
+    t.string "id",            :null => false
+    t.string "experience_id", :null => false
+    t.string "emotion_id",    :null => false
+  end
+
+  add_index "experienced_emotions", ["experience_id"], :name => "index_experienced_emotions_on_experience_id"
+
+  create_table "experiences", :id => false, :force => true do |t|
+    t.string   "id",          :null => false
+    t.string   "user_id",     :null => false
+    t.text     "comment"
+    t.datetime "tagged_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "experiences", ["user_id"], :name => "index_experiences_on_user_id"
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
@@ -45,6 +89,7 @@ ActiveRecord::Schema.define(:version => 20120331210424) do
     t.string   "last_login_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
