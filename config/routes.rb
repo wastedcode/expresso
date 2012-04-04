@@ -36,7 +36,8 @@ ActionController::Routing::Routes.draw do |map|
   # See how all your routes lay out with "rake routes"
   #
 
-  map.resources :emotions, :only => [:new, :create, :index, :update]
+  map.resources :emotions, :only => [:new, :create, :index, :update, :show]
+  map.resources :activities, :only => [:new, :create, :index, :update]
   map.resource :user_session
   map.root :controller => "user_sessions", :action => "new"
   map.resource :account, :controller => "users"
