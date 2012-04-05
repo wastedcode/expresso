@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120402234100) do
+ActiveRecord::Schema.define(:version => 20120404220500) do
 
   create_table "activities", :id => false, :force => true do |t|
     t.string   "id",         :limit => 36, :null => false
@@ -36,6 +36,14 @@ ActiveRecord::Schema.define(:version => 20120402234100) do
   end
 
   add_index "emotions", ["name"], :name => "index_emotions_on_name", :unique => true
+
+  create_table "experience_locations", :id => false, :force => true do |t|
+    t.string "id",            :null => false
+    t.string "experience_id", :null => false
+    t.string "venue_id",      :null => false
+  end
+
+  add_index "experience_locations", ["experience_id"], :name => "index_experience_locations_on_experience_id"
 
   create_table "experienced_activities", :id => false, :force => true do |t|
     t.string "id",            :null => false
@@ -94,5 +102,16 @@ ActiveRecord::Schema.define(:version => 20120402234100) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["persistence_token"], :name => "index_users_on_persistence_token"
+
+  create_table "venues", :id => false, :force => true do |t|
+    t.string  "id",               :null => false
+    t.string  "partner_venue_id"
+    t.integer "venue_type"
+    t.string  "name",             :null => false
+    t.text    "categories"
+    t.text    "location"
+  end
+
+  add_index "venues", ["partner_venue_id"], :name => "index_venues_on_partner_venue_id"
 
 end
