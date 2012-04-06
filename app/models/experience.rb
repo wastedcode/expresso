@@ -4,6 +4,7 @@ class Experience < ActiveRecord::Base
   belongs_to :user
   has_many :experienced_emotions
   has_many :experienced_activities
+  has_many :experience_locations
   has_many :actors
 
   validates_presence_of :user
