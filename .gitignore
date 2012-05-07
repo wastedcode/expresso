@@ -1,3 +1,4 @@
 development.log
 *.sqlite3
 *.swp
+*.swo
